@@ -51,7 +51,7 @@ choice.
 2. Estimate the Fundamental Matrix using the Eight-Point Algorithm within RANSAC
 3. Estimation of Essential Matrix from the Fundamental matrix
 4. Camera Pose computation from the Essential Matrix
-5.Linear Triangulation
+5. Linear Triangulation
 
 - For more information about the pipeline I welcome you to have a look at the [Report](https://github.com/Pruthvi-Sanghavi/visual_odometry/blob/main/ProjectReport.pdf)
 
