@@ -8,12 +8,10 @@ This is a software written as a part of project for the course Perception for Au
 </p>
 
 ### Contents
-1. Introduction
-2. Dataset and Processing
-3. Dependencies
-4. Technical Description 
-5. Further Improvements
-6. Build and Run Instructions
+1. [Introduction](https://github.com/Pruthvi-Sanghavi/visual_odometry#introduction)
+2. [Dataset and Processing](https://github.com/Pruthvi-Sanghavi/visual_odometry#dataset-and-processing)
+3. [Dependencies](https://github.com/Pruthvi-Sanghavi/visual_odometry#dependencies)
+4. [Pipeline](https://github.com/Pruthvi-Sanghavi/visual_odometry#pipeline) 
 
 ## Introduction
 <p align="justify">
@@ -38,9 +36,22 @@ aModel.py as follows: fx , fy , cx , cy , G camera image , LUT = ReadCameraModel
 3. The images in the given dataset were further Undistorted using the current frame and next frame using
 UndistortImage.py: undistorted image = UndistortImage(originalimage,LUT)
 
-
 ## Dependencies
 - opencv
 - numpy
 - matplotlib
 - scipy
+
+## Pipeline
+To estimate the 3D motion (translation and rotation) between successive frames in the sequence,
+the following steps were followed.
+
+1. Find point correspondences between successive frames using a keypoint algorithm of your
+choice.
+2. Estimate the Fundamental Matrix using the Eight-Point Algorithm within RANSAC
+3. Estimation of Essential Matrix from the Fundamental matrix
+4. Camera Pose computation from the Essential Matrix
+5.Linear Triangulation
+
+- For more information about the pipeline I welcome you to have a look at the [Report](https://github.com/Pruthvi-Sanghavi/visual_odometry/blob/main/ProjectReport.pdf)
+
