@@ -2,8 +2,8 @@
 This is a software written as a part of project for the course Perception for Autonomous Vehicles.
 
 <p align="center">
-  <img src="https://github.com/Pruthvi-Sanghavi/visual_odometry/blob/main/result.gif" height="300px"/>
-  <img src="https://github.com/Pruthvi-Sanghavi/visual_odometry/blob/main/vo-res.png" height="300px"/>
+  <img src="https://github.com/Pruthvi-Sanghavi/visual_odometry/blob/main/result.gif" height="250px"/>
+  <img src="https://github.com/Pruthvi-Sanghavi/visual_odometry/blob/main/vo-res.png" height="250px"/>
 
 </p>
 
